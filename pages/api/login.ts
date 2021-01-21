@@ -3,8 +3,8 @@ import jwt from "jsonwebtoken";
 
 const KEY = "asdnfjandfjaf";
 
-export default (req, res) => {
-  // console.log(req.body);
+export default (req: NextApiRequest, res: NextApiResponse) => {
+  console.log(req.body);
 
   if (!req.body) {
     res.statusCode = 404;
